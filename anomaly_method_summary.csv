@@ -1,0 +1,4 @@
+method,fit_data,assumption,flagged_rows,flagged_percent
+IQR statistical baseline,First 70% chronological rows only,Any sensor outside train Q1−1.5×IQR / Q3+1.5×IQR flags the row,331,10.1
+Isolation Forest,First 70% chronological rows only; median imputation and scaling fitted on train only,"contamination=0.03 is a working assumption, not known ground-truth prevalence",89,2.72
+Agreement,Both methods applied to all rows after training-only fit,"Agreement is a review signal, not anomaly truth",60,1.83
